@@ -1,7 +1,7 @@
 require u-boot-common.inc
 
 # tools/binman/binman needs python3-setuptools now
-DEPENDS:append = " python3-setuptools-native"
+DEPENDS:append = " python3-setuptools-native gnutls"
 
 LIC_FILES_CHKSUM = "file://Licenses/README;md5=5a7450c57ffe5ae63fd732446b988025"
 
