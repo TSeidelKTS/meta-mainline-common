@@ -1,0 +1,42 @@
+From fe61c4a347d07364fe60b78328020956702a9391 Mon Sep 17 00:00:00 2001
+From: Marek Vasut <marex@denx.de>
+Date: Thu, 21 Apr 2022 19:55:37 +0200
+Subject: [PATCH] Revert "build: declare dependency for use as a subproject"
+
+This reverts commit 26843d6155879ae16f444cf4962ba37385e859b0.
+
+Upstream-Status: Inappropriate [Compatibility with dunfell meson version]
+---
+ meson.build | 10 +---------
+ 1 file changed, 1 insertion(+), 9 deletions(-)
+
+diff --git a/meson.build b/meson.build
+index cc27196..db5e190 100644
+--- a/meson.build
++++ b/meson.build
+@@ -1,6 +1,6 @@
+ project('wayland-protocols',
+ 	version: '1.25',
+-	meson_version: '>= 0.54.0',
++	meson_version: '>= 0.53.0',
+ 	license: 'MIT/Expat',
+ )
+ 
+@@ -106,14 +106,6 @@ configure_file(
+ 	configuration: pkgconfig_configuration,
+ )
+ 
+-wayland_protocols = declare_dependency(
+-	variables: {
+-		'pkgdatadir': wayland_protocols_srcdir,
+-	},
+-)
+-
+-meson.override_dependency('wayland-protocols', wayland_protocols)
+-
+ if get_option('tests')
+ 	subdir('tests')
+ endif
+-- 
+2.35.1
+
