@@ -3,13 +3,13 @@ require recipes-kernel/linux/linux-yocto.inc
 # board specific branches
 KBRANCH ?= "linux-5.10.y"
 
-SRCREV_machine ?= "e2e52b40ef1acfd4f2508c32fce1409013909581"
-SRCREV_meta ?= "6337d56f23d18e5680493dadcb52899d5e6a7c09"
+SRCREV_machine ?= "5754c570a569d3f31e874abbf08dae1218a7431c"
+SRCREV_meta ?= "53a0c749bae96beda7dc041dc6fdeee03336ada6"
 
 SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git;name=machine;branch=${KBRANCH}; \
            git://git.yoctoproject.org/yocto-kernel-cache;type=kmeta;name=meta;branch=yocto-5.10;destsuffix=${KMETA}"
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
-LINUX_VERSION ?= "5.10.121"
+LINUX_VERSION ?= "5.10.122"
 
 require linux-stable.inc
