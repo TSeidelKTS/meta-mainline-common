@@ -3,13 +3,13 @@ require mesa-mainline.inc
 DEFAULT_PREFERENCE = "-1"
 
 SRC_URI = " \
-	git://gitlab.freedesktop.org/mesa/mesa.git;branch=22.0;protocol=https \
+	git://gitlab.freedesktop.org/mesa/mesa.git;branch=22.1;protocol=https \
 "
 
 S = "${WORKDIR}/git"
-SRCREV = "a735e96040d94756c92cb19f26c968ca5e6b169b"
+SRCREV = "a037d8e19985de21534c6044587e1c7306f61498"
 
-PV = "22.0.5"
+PV = "22.1.2"
 
 #because we cannot rely on the fact that all apps will use pkgconfig,
 #make eglplatform.h independent of MESA_EGL_NO_X11_HEADER
