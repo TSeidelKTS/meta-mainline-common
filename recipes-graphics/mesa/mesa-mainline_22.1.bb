@@ -7,9 +7,9 @@ SRC_URI = " \
 "
 
 S = "${WORKDIR}/git"
-SRCREV = "2a104d5794b5f625bf19c398d517f93af7a5ee20"
+SRCREV = "ceb5c0f559b3ce0ca635313ff4a442fe13da06e4"
 
-PV = "22.1.2"
+PV = "22.1.3"
 
 #because we cannot rely on the fact that all apps will use pkgconfig,
 #make eglplatform.h independent of MESA_EGL_NO_X11_HEADER
