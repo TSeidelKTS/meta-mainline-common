@@ -10,7 +10,7 @@ LICENSE = "GPLv2+"
 PE = "1"
 
 BB_STRICT_CHECKSUM = "0"
-SRC_URI = "https://github.com/TSeidelKTS/u-boot.git"
+SRC_URI = "https://github.com/TSeidelKTS/u-boot/archive/refs/heads/master.zip"
 
 S = "${WORKDIR}/git"
 B = "${WORKDIR}/build"
