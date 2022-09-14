@@ -9,7 +9,8 @@ DEPENDS += "flex-native bison-native swig-native"
 LICENSE = "GPLv2+"
 PE = "1"
 
-SRC_URI = "https://github.com/TSeidelKTS/u-boot/archive/refs/heads/master.zip"
+BB_STRICT_CHECKSUM = "0"
+SRC_URI = "https://github.com/TSeidelKTS/u-boot.git"
 
 S = "${WORKDIR}/git"
 B = "${WORKDIR}/build"
