@@ -9,8 +9,7 @@ DEPENDS += "flex-native bison-native swig-native"
 LICENSE = "GPLv2+"
 PE = "1"
 
-SRC_URI = "git://source.denx.de/u-boot.git;branch=master \
-          "
+SRC_URI = "https://github.com/TSeidelKTS/u-boot/archive/refs/heads/master.zip"
 
 S = "${WORKDIR}/git"
 B = "${WORKDIR}/build"
